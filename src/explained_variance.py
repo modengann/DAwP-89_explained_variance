@@ -9,12 +9,7 @@ import matplotlib.pyplot as plt
 
 
 def explained_variance():
-    df = pd.read_csv('src/data.tsv', sep='\t')
-    variance = df.var(axis=0)
-    pca = PCA()
-    pca.fit(df)
-    exp_variance = pca.explained_variance_
-    return variance, exp_variance
+    pass
 
 def main():
     v, ev = explained_variance()
